@@ -14,6 +14,13 @@ option(BUILD_TESTS "Build tests" OFF)
 >>>>>>> 5745dfd (added tests)
 
 project(print)
+set(PRINT_VERSION_MAJOR 0)
+set(PRINT_VERSION_MINOR 1)
+set(PRINT_VERSION_PATCH 0)
+set(PRINT_VERSION_TWEAK 0)
+set(PRINT_VERSION
+  ${PRINT_VERSION_MAJOR}.${PRINT_VERSION_MINOR}.${PRINT_VERSION_PATCH}.${PRINT_VERSION_TWEAK})
+set(PRINT_VERSION_STRING "v${PRINT_VERSION}")
 
 add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp)
 
@@ -59,3 +66,5 @@ endif()
 >>>>>>> 0393681 (Create CMakeLists.txt)
 =======
 >>>>>>> 5745dfd (added tests)
+
+include(CPackConfig.cmake)
