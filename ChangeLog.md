@@ -1,2 +1,2 @@
-* Sat May 11 2024 eikatkoffbmstu <eikatkoff@yandex.ru> 0.1.0.0
+* Fri May 10 2024 Rigrey <ozhogin.m@gmail.com> 0.1.0.0
 - Initial RPM release
